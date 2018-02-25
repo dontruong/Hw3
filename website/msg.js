@@ -40,7 +40,7 @@ document.write("sum is "+sum(x,y,z)+"<br>");
 
 document.write("binary is "+(x.toString(2))+",");
 
-document.write((y.toString(2)).substr(-8)+",");
+document.write((y.toString(2))+",");
 
-document.write((z.toString(2)).substr(-8));
+document.write((z.toString(2));
 

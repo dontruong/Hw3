@@ -1,44 +1,44 @@
-var x,y,z;
+var arr= [];
 
-x = prompt('Please input the start: ')
+var x = prompt('Please input the start: ')
 
-y  = prompt('Please input end: ')
+var y  = prompt('Please input end: ')
 
-z = prompt('Please input step: ')
+var z = prompt('Please input step: ')
 
+if(z == 0){
+    alert("you entered 0 increments , refresh and try again")
+}
+var x = parseInt(x);
+var y = parseInt(y);
+var z = parseInt(z);
 
-x = parseInt(x);
-y = parseInt(y);
-z = parseInt(z);
+for(var a=x; a< y;a+=z) {
+    arr.push(a);
 
-
-function sum (x,z,y){
-    return x+z+y
 }
 
-if(isNaN(sum(x,y,z))){
+for(var a=x; a>y;a+=z) {
+    arr.push(a);
 
+}
+
+function sum(i, h) {
+    return i + h;
+}
+arr.push(y);
+
+if(isNaN(arr.reduce(sum))){
     alert ("one of inputs is not a number, refresh and try again ");
     
     }
+ function binary(r,y){
+     var bin = r.tostring(2);
+     return bin;
+ }
 
-if(x == 0){
-    alert("you entered 0 , refresh and try again")
-}
-
-if(y == 0){
-    alert("you entered 0 , refresh and try again")
-}
-
-if(z == 0){
-    alert("you entered 0 , refresh and try again")
-}
-
-document.write("array is " ,x+", ",y+", " , z +"<br>" ); 
-
-document.write("sum is "+sum(x,y,z)+"<br>");
-
-document.write("binary is "+(x.toString(2)) +", "+ (y.toString(2))+", "+ (z.toString(2)));
-
+document.write("array is" + arr +"<br>");
+document.write("sum is " + arr.reduce(sum) +"<br>");
+document.write("binary is "+ binary(a,y));
 
 

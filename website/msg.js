@@ -34,11 +34,11 @@ if(z == 0){
     alert("you entered 0 , refresh and try again")
 }
 
-document.write("array is " ,x+" ",y+" " , z+" " +"<br>" ); 
+document.write("array is " ,x+", ",y+", " , z+", " +"<br>" ); 
 
 document.write("sum is "+sum(x,y,z)+"<br>");
 
-document.write("binary is "+(x.toString(2)) +","+ (y.toString(2))+","+ (z.toString(2)));
+document.write("binary is "+(x.toString(2)) +", "+ (y.toString(2))+", "+ (z.toString(2)));
 
 
 

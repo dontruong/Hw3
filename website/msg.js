@@ -38,9 +38,7 @@ document.write("array is " ,x+" ",y+" " , z+" " +"<br>" );
 
 document.write("sum is "+sum(x,y,z)+"<br>");
 
-document.write("binary is "+(x.toString(2))+",");
+document.write("binary is "+(x.toString(2)) +","+ (y.toString(2))+","+ (z.toString(2)));
 
-document.write((y.toString(2))+",");
 
-document.write((z.toString(2));
 
